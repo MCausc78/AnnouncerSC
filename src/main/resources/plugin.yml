@@ -1,0 +1,50 @@
+name: AnnouncerSC
+version: 10.0
+main: org.mcausc78.announcersc.BukkitAnnouncerSC
+softdepend: [ PlaceholderAPI ]
+authors: [ MCausc78 ]
+commands:
+   announcersc:
+      description: AnnouncerSC main command
+      usage: /<command> <args... >
+      aliases: [asc]
+   announce:
+      description: Broadcast a text
+      usage: /<command> <text>
+      aliases: [a, broadcast, bc, bcast, broad]
+permissions:
+  announcersc.*:
+    default: op
+    description: Allows to all AnnouncerSC commands.
+    children:
+      announcersc.all: true
+  announcersc.all:
+    default: op
+    description: Allows to all AnnouncerSC commands.
+    children:
+      announcersc.announce.use: true
+      announcersc.announce.colors: true
+      announcersc.admin.all: true
+  announcersc.admin.*:
+    default: op
+    description: Allows to all AnnouncerSC admin commands.
+    children:
+      announcersc.admin.all: true
+  announcersc.admin.all:
+    default: op
+    description: Allows to all AnnouncerSC admin commands.
+    children:
+      announcersc.admin.reload: true
+      announcersc.admin.reboot: true
+  announcersc.announce.use:
+    default: op
+    description: Allows to broadcast message.
+  announcersc.announce.colors:
+    default: op
+    description: Allows to use color codes in broadcast.
+  announcersc.admin.reload:
+    default: op
+    description: Allows to reload configuration.
+  announcersc.admin.reboot:
+    default: op
+    description: Allows to restart this plugin.
