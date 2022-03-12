@@ -1,0 +1,24 @@
+#
+# ASC
+# ＡｎｎｏｕｎｃｅｒＳＣ Plugin
+#
+
+# Extra placeholders:
+# - $username = returns player username
+# - $permission = returns needed permission
+# - $message = returns broadcasted message
+# - $servername = returns name of server
+# - $serverversion = returns server version
+# - $command = returns command name
+# - $label = returns command label
+# - $args = returns command args
+
+# Any PAPI placeholder allowed!
+
+no-perms: "&cYou don't have permissions."
+announce-format: "&a$username&r &7>> &d$message"
+plugin-rebooted: "&aAnnouncerSC successfully restarted!"
+plugin-reloaded: "&aAnnouncerSC successfully reloaded!"
+broadcast-usage: "&cUsage: /$label <text>"
+command-usage: "&a&lAnnouncer&6&lS&e&lC&r &7- &cBroadcaster plugin\n&r\n&3> &b/$label help &7- &aDisplays this\n&3> &b/$label reload &7- &aReload the plugin\n&3> &b/$label reboot &7- &aRestart the plugin"
+invaild-command: '&cInvaild command /$label. Type /$label help'
