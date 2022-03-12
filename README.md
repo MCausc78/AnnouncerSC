@@ -1,1 +1,2 @@
 # AnnouncerSC
+Simple announcer plugin.
